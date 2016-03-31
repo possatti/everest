@@ -1,5 +1,5 @@
 /**
- * Custom CSS to the Everest project. It's more for fixing stuff.
+ * Custom CSS to the Everest project. It's mostly for fixing stuff.
  */
 
 /* Leave some empty space in the top for the navbar */
@@ -11,8 +11,8 @@ body {
 .avatar {
   position: relative;
   top: -5px;
-  float: left;
-  left: -5px;
+  float: right;
+  left: 20px;
 }
 
 /* Puts more space to the logout button on the navbar */
