@@ -22,3 +22,25 @@ body {
 .navbar-btn {
   margin-right: 10px;
 }
+
+/* Centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}
+
+.skill {
+  margin: 20px;
+  text-align: center;
+}
+
+.skill-title {
+  margin-top: 10px;
+  /*font-size: 15px;*/
+  /*font-weight: bold;*/
+}
