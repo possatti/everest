@@ -4,18 +4,18 @@
 
 /* Leave some empty space in the top for the navbar */
 body {
-	padding-top: 70px;
+  padding-top: 70px;
 }
 
 /* Helps with the avatar alignment on the navbar */
 .avatar {
-    position: relative;
-    top: -5px;
-    float: left;
-    left: -5px;
+  position: relative;
+  top: -5px;
+  float: left;
+  left: -5px;
 }
 
 /* Puts more space to the logout button on the navbar */
 .navbar-btn {
-	margin-right: 10px;
+  margin-right: 10px;
 }
