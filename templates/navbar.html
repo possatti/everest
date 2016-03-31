@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,12 +21,15 @@
         <li><a href="#">Leaderboards</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a><img src="static/img/no_avatar.gif" class="img-circle avatar" height="30" width="30"></a></li>
+        <li><a><img src="{% static 'img/no_avatar.gif' %}" class="img-circle avatar" height="30" width="30"></a></li>
         <li><p class="navbar-text">fulano_rocks</p></li>
         <li><a class="glyphicon glyphicon-cog" href="#"></a></li>
-        <li><a class="glyphicon glyphicon-bell" href="#"></a></li>
+        <li>
+          <a class="glyphicon glyphicon-bell" href="#"></a>
+          {# <span class="badge">42</span> #}
+        </li>
         <li><button type="button" class="btn btn-default navbar-btn">Logout</button></li>
-        
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
