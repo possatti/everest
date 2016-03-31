@@ -4,7 +4,10 @@
 
 /* Leave some empty space in the top for the navbar */
 body {
-  padding-top: 70px;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
 /* Helps with the avatar alignment on the navbar */
