@@ -7,3 +7,6 @@ def index(request):
 
 def skills(request):
     return render(request, 'skills.html')
+
+def coding(request):
+    return render(request, 'coding.html')

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %} Exercício - Everest {% endblock %}
+
+{% block body %}
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Exercício X</h3>
+  </div>
+  <div class="panel-body">
+    <p>Você deve imprimir o seu próprio código. Cheers!</p>
+
+    <p>Vel no soleat rationibus. Ut stet euripidis vel, vidit nonumes gloriatur in vim. Quot labore eligendi ei his. Vel ne eleifend recteque omittantur. Et accusamus assentior mediocritatem sit, odio elaboraret dissentiunt ut pri. Duo semper doctus te, ne possit disputando cum.</p>
+
+    <p>Ad lorem putant vivendum sed, laudem verear no mel. Quaeque constituam interpretaris ea vix, munere argumentum per ea, et odio everti iriure pri. Eam ea vidisse omnesque tractatos. Iusto temporibus quo in, has id detracto consequat. At est intellegat necessitatibus.</p>
+
+    <p>Justo epicuri delicata an has, an nec augue labore comprehensam, an sit alii hendrerit. Purto brute voluptua vis ut. Pri erat labore at, admodum incorrupte quo et, ne dolorum admodum mei. Eu est viris assentior forensibus, sale dicat cu mea. Ex has nulla lucilius tractatos, ne dicat integre oporteat est.</p>
+  </div>
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div id="editor-box">
+        <div id="editor" class="ace">class FooBar(object):
+    def foo(self, bar):
+        stuff = bar.do()
+        print(str(stuff))
+        if stuff:
+            return True
+        else:
+            return False
+</div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a class="btn btn-primary" href="#">Editor Configuration</a>
+      <a class="btn btn-primary" href="#">Editor Keybindings</a>
+      <div class="pull-right">
+        <a class="btn btn-primary" href="#">Open File</a>
+        <a class="btn btn-success" href="#">Run Code</a>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div id="terminal-box">
+        <div id="terminal" class="ace">Python 3.4.3 (default, Oct 14 2015, 20:33:09)
+[GCC 4.8.4] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>>
+</div>
+      </div>
+    </li>
+  </ul>
+
+  {# Load ace files #}
+  <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+      // Editor setup
+      var editor = ace.edit("editor");
+      editor.setTheme("ace/theme/crimson_editor");
+      editor.getSession().setMode("ace/mode/python");
+      editor.getSession().setTabSize(4);
+      editor.getSession().setUseSoftTabs(true);
+      document.getElementById('editor').style.fontSize='18px';
+      // Terminal output setup
+      var terminal = ace.edit("terminal");
+      terminal.setTheme("ace/theme/terminal");
+      terminal.getSession().setMode("ace/mode/python");
+      document.getElementById('terminal').style.fontSize='18px';
+      terminal.setReadOnly(true);
+      terminal.setShowPrintMargin(false);
+      terminal.renderer.setShowGutter(false);
+  </script>
+</div>
+
+{% endblock %}
