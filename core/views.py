@@ -10,3 +10,6 @@ def skills(request):
 
 def coding(request):
     return render(request, 'coding.html')
+
+def signin(request):
+    return render(request, 'signin.html')
