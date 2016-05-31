@@ -13,3 +13,6 @@ def coding(request):
 
 def signin(request):
     return render(request, 'signin.html')
+
+def sitemap(request):
+    return render(request, 'sitemap.html')
